@@ -9,7 +9,8 @@ public class User {
 	private String login;
 
 	private User(String login){ this.login = login; id = 0;}
-	static User createUser(String login){
+	public void setId(int id){this.id = id;}
+	public static User createUser(String login){
 		return new User(login);
 	}
 	public String getLogin() { return login; }

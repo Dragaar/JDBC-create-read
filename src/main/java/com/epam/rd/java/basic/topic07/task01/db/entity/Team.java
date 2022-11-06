@@ -9,7 +9,9 @@ public class Team {
 	private String name;
 
 	private Team(String name){ this.name = name; id = 0;}
-	static Team createTeam(String name){
+
+	public void setId(int id){this.id = id;}
+	public static Team createTeam(String name){
 		return new Team (name);
 	}
 	public String getName() { return name; }
